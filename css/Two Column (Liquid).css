@@ -1,0 +1,126 @@
+#container
+{
+	margin: 0 auto;
+	width: 100%;
+	background: #fff;
+}
+
+#header
+{
+	 background:#333       ;
+   background-image: url(pozadinadpis.jpg);
+	padding: 20px;
+  background-repeat:no-repeat
+}
+
+#header h1 { margin: 0; }
+
+#navigation
+{
+	float: left;
+	width: 100%;
+	background: #6bd400;
+}
+.ul.sub-menu {
+    display:none;
+}
+#navigation ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+#navigation ul li
+{
+	list-style-type: none;
+	display: inline;
+	
+}
+#navigation li ul
+{
+	position:absolute;
+    left:0;
+    top:40px; 
+    width:200px;
+	
+}
+
+#navigation li a
+{
+	display: block;
+	float: left;
+	padding: 5px 10px;
+	color: #fff;
+	text-decoration: none;
+	border-right: 1px solid #fff;
+
+}
+
+#navigation li a:hover { background: #333; }
+#navigation a:focus,
+#navigation a:active {
+    color:rgb(50,50,50);
+}
+
+/* style sub level links */
+#navigation li li a {
+    border-bottom:solid 1px rgb(200,50,50);
+    margin:0 10px;
+    padding:0;
+}
+#navigation li li:last-child a {
+    border-bottom:none;
+}
+
+/* show arrows for dropdowns */
+#navigation li.dropdown > a {
+    background-image:url('img/arrow-down.png');
+    background-position:right 20px;
+    background-repeat:no-repeat;
+}
+
+#navigation li li.dropdown > a {
+    background-image:url('img/arrow-right.png');
+    background-position:right 16px;
+    background-repeat:no-repeat;
+}
+
+#content-container
+{
+	float: left;
+	width: 100%;
+	background: #FFF url(layout-two-liquid-background.gif) repeat-y 68% 0;
+}
+
+#content
+{
+	clear: left;
+	float: left;
+	width: 60%;
+	padding: 20px 0;
+	margin: 0 0 0 4%;
+	display: inline;
+
+}
+
+#content h2 { margin: 0; }
+
+#aside
+{  
+	float: right;
+	width: 26%;
+	padding: 20px 0;
+	margin: 0 3% 0 0;
+	display: inline;
+}
+
+#aside h3 { margin: 0; }
+
+#footer
+{
+	clear: left;
+	background: #ccc;
+	text-align: right;
+	padding: 20px;
+	height: 1%;
+}
